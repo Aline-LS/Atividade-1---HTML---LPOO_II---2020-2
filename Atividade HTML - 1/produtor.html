@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="icon" href="fs1logo.ico" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Style the header */
+        
+        header {
+            background-color: #000000;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        
+        nav {
+            float: left;
+            width: 20%;
+            height: 390px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background: #061442;
+            padding: 20px;
+        }
+        
+        nav ul {
+            color: rgb(255, 0, 0);
+            list-style-type: none;
+            padding: 20px;
+        }
+        
+        article {
+            float: left;
+            padding: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 80%;
+            color: #00ff00;
+            font-size: italic;
+            background-color: #0030cc;
+            height: 390px;
+            /* only for demonstration, should be removed */
+        }
+        /* Clear floats after the columns */
+        
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        footer {
+            background-color: #000000;
+            padding: 10px;
+            text-align: center;
+            color: rgb(255, 0, 0);
+        }
+        
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #a82222;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #3a0303;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="fslogo.png" className="logo" alt="fslogo" />
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <h4>Menu</h4>
+                <br>
+                <li><a href="index.html">Página Inicial</a></li>
+                </br>
+                <br>
+                <li><a href="cadastro.html">Cadastro para pesquisas</a></li>
+                </br>
+                <br>
+                <li><a href="contato.html">Contatos</a></li>
+                </br>
+                <br>
+                <li><a href="times.html">Times</a></li>
+                </br>
+            </ul>
+        </nav>
+
+        <article>
+            <h2><i>Ingressos</i></h2>
+
+            <table>
+                <tr>
+                    <th>Jogo</th>
+                    <th>Disputa</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td>Brasil x Argentina - Ingresso VIP</td>
+                    <td>Final Copa do Mundo</td>
+                    <td>R$ 950,00</td>
+                </tr>
+                <tr>
+                    <td>Brasil x Argentina - Normal</td>
+                    <td>Final Copa do Mundo</td>
+                    <td>R$ 550,00</td>
+                </tr>
+                <tr>
+                    <td>Flamengo x Liverpool - Ingresso VIP</td>
+                    <td>Final Mundial</td>
+                    <td>R$ 600,00</td>
+                </tr>
+                <tr>
+                    <td>São Paulo x Botafogo - Ingresso VIP</td>
+                    <td>Copa do Brasil</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Barcelona x Real Madrid - Ingresso VIP</td>
+                    <td>Final Copa do Rei</td>
+                    <td>R$ 750,00</td>
+                </tr>
+                <tr>
+                    <td>Cruzeiro x Chapecoense - Ingresso VIP</td>
+                    <td>Serie B</td>
+                    <td>R$ 100,00</td>
+                </tr>
+            </table>
+    </section>
+
+    <footer>
+        <h3>EF</h3>
+    </footer>
+
+</body>
+
+</html>
